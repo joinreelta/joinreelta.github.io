@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script src="lang.js"></script>
+<title>Privacy · Reelta</title>
+<meta name="description" content="Come Reelta tratta i tuoi dati: cosa salva, dove, chi lo vede e come cancellare tutto.">
+<meta name="theme-color" content="#241A13">
+<link rel="icon" href="icon-192.png">
+<style>
+:root{color-scheme:dark;--bg:#241A13;--s1:#31251B;--line:rgba(226,190,128,.26);--g:#DDB574;--gl:#F6E2B4;--t:#FBF2E4;--m:#CDB89D}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(120% 40% at 50% -6%,#4A3624 0%,var(--bg) 60%) var(--bg);color:var(--t);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+main{max-width:720px;margin:0 auto;padding:calc(28px + env(safe-area-inset-top,0px)) 20px 60px}
+a{color:var(--g)}
+h1{font-family:Georgia,"Times New Roman",serif;font-weight:600;font-size:clamp(32px,8vw,44px);color:var(--gl);line-height:1.1;margin-bottom:8px}
+h2{font-family:Georgia,"Times New Roman",serif;font-weight:600;font-size:22px;color:var(--gl);margin:30px 0 8px}
+p,li{font-size:17px;color:var(--t)}
+p+p{margin-top:10px}
+ul{padding-left:22px;margin-top:8px}li+li{margin-top:6px}
+.lead{color:var(--m);font-size:18px}
+.box{background:var(--s1);border:1px solid var(--line);border-radius:20px;padding:16px 18px;margin-top:18px}
+.box b{color:var(--g)}
+.top{display:inline-block;margin-bottom:22px;text-decoration:none;font-weight:700}
+footer{margin-top:40px;color:var(--m);font-size:15px}
+</style>
+</head>
+<body>
+<main>
+<a class="top" href="./">← Torna a Reelta</a>
+<h1>Privacy</h1>
+<p class="lead">Ultimo aggiornamento: 3 novembre 2026. Reelta è in beta su invito.</p>
+
+<div class="box">
+  <p><b>In breve:</b> Reelta non ha account e non ha un archivio online. Reel, piani e messaggi restano sui telefoni delle persone del tuo cerchio. Non vendiamo dati e non li usiamo per pubblicità.</p>
+</div>
+
+<h2>Chi è responsabile</h2>
+<p>Reelta è un progetto indipendente sviluppato da Domenico, che è il titolare del trattamento dei dati descritto in questa pagina. Per qualsiasi domanda sulla privacy puoi scrivere a chi ti ha invitato su Reelta: la richiesta arriva a chi gestisce l’app. Un indirizzo email dedicato verrà indicato qui a breve.</p>
+
+<h2>Quali dati usa Reelta</h2>
+<ul>
+  <li><b>Il nome che scegli</b> quando entri. Può essere anche un soprannome.</li>
+  <li><b>Quello che condividi nel cerchio</b>: i link dei Reel, le reazioni, i commenti, i piani e i messaggi.</li>
+  <li><b>Chiavi tecniche casuali</b> che servono a riconoscere il tuo telefono nel cerchio e a proteggere i collegamenti.</li>
+</ul>
+<p>Reelta <b>non</b> chiede email, numero di telefono, posizione, rubrica, foto o dati di pagamento.</p>
+
+<h2>Dove finiscono i dati</h2>
+<ul>
+  <li><b>Sul tuo telefono</b>, nella memoria dell’app, e sui telefoni delle persone del tuo cerchio. Non esiste una copia su un nostro server.</li>
+  <li><b>In viaggio tra i telefoni</b>: i collegamenti sono diretti e cifrati. A ogni collegamento i telefoni si riconoscono a vicenda, così nessuno può fingersi un altro.</li>
+  <li><b>La copia di sicurezza</b>, se decidi di farla, è un file cifrato con una password che scegli tu e che noi non conosciamo. Lo conservi dove vuoi tu (per esempio in File o iCloud).</li>
+</ul>
+
+<h2>Servizi esterni usati da Reelta</h2>
+<ul>
+  <li><b>PeerJS</b> (servizio pubblico di collegamento): aiuta i telefoni a trovarsi. Vede gli indirizzi di rete e i codici casuali dei telefoni, non i contenuti.</li>
+  <li><b>Supabase</b> (server a Londra, Regno Unito): quando una persona del cerchio non è collegata, Reel e messaggi la aspettano lì, <b>cifrati sul telefono prima di partire</b>: il server vede solo caselle con nomi casuali e testo illeggibile, e li cancella appena consegnati (al massimo dopo 14 giorni). Se attivi gli avvisi ad app chiusa, conserva l’indirizzo tecnico delle notifiche del telefono: la notifica dice solo “Hai qualcosa di nuovo su Reelta”, mai chi né cosa. Serve anche ad aprire i link corti di Facebook, Snapchat, LinkedIn e Spotify per mostrarli nell’app.</li>
+  <li><b>«Condividi → Reelta» su iPhone</b> (solo se installi il comando rapido dall’app): il comando manda al server (Supabase, Londra) <b>solo il link pubblico del video</b>, sotto un codice casuale creato sul tuo telefono e non collegato al tuo nome né al tuo cerchio. È l’unica cosa che arriva al server non cifrata: Reelta la ritira e il server la cancella subito; se nessuno la ritira, sparisce comunque dopo 24 ore. Si accettano solo link di siti di video.</li>
+  <li><b>Foto e video nei messaggi</b>: vengono cifrati sul telefono, con una chiave nuova per ogni file che viaggia solo dentro il messaggio. Sul server (Supabase, Londra) restano solo finché chi deve riceverli li ha scaricati, al massimo 14 giorni, poi si cancellano. Sul telefono non si salvano: restano solo se li fissi 📌 o li salvi tu nella galleria. I video durano al massimo 30 secondi.</li>
+  <li><b>Conteggio anonimo</b>: una volta al giorno il telefono manda solo “sono attivo”, con un codice casuale creato sul telefono, il tipo di telefono (iPhone o Android) e la versione dell’app. Per contare i cerchi manda un’impronta irreversibile di ciascuno: serve a sapere quanti sono, non quali. Niente nomi, messaggi o Reel. Questi dati si cancellano dopo 90 giorni.</li>
+  <li><b>«Bentornato»</b>: se riapri Reelta dopo qualche giorno, una volta sola ti chiediamo cosa ti aveva allontanato. Se rispondi, parte la risposta con quanti giorni eri via, la versione, la lingua e se è un iPhone. Niente nomi.</li>
+  <li><b>Errori dell’app</b>: se qualcosa si rompe, Reelta ci manda da sola una riga con l’errore tecnico, la versione, la lingua, il tipo di telefono e la schermata in cui eri. Mai nomi, cerchi, link, Reel o messaggi. Al massimo 3 al giorno. Con la <b>Modalità riservata</b> accesa non parte niente.</li>
+  <li><b>Segnalazioni dall’app</b>: se tocchi “Invia a Reelta” in “Segnala un problema”, partono il testo che scrivi e alcuni dettagli tecnici (versione, tipo di telefono, misure dello schermo), mai Reel, messaggi o chiavi.</li>
+  <li><b>Google Gemini</b> (intelligenza artificiale, solo se tocchi “✨ Riconosci dal video” o “✨ Riassunto automatico”): riceve il link del video, il suo titolo e la descrizione pubblici, e l’eventuale commento di chi l’ha mandato. Mai i vostri nomi, i messaggi o altro. Durante la prova usiamo il piano gratuito di Google, che può usare questi testi per migliorare i suoi servizi.</li>
+  <li><b>GitHub Pages</b>: ospita l’app. Come ogni sito, può registrare l’indirizzo di rete di chi la apre.</li>
+  <li><b>Google Fonts</b>: fornisce i caratteri dell’app. Google riceve l’indirizzo di rete quando vengono caricati.</li>
+  <li><b>Le piattaforme dei video</b> (Instagram, TikTok, YouTube, Facebook e altre): i Reel sono mostrati dentro Reelta dalle loro pagine, quindi quelle piattaforme possono registrare che li guardi, secondo le loro regole sulla privacy.</li>
+  <li><b>Pareri (facoltativi)</b>: ogni tanto Reelta chiede 3 domande. Se tocchi “Invia”, partono le risposte e alcuni numeri d’uso di quel telefono (Reel e piani a settimana, giorni di uso), con un codice casuale al posto dei nomi. Prima di inviare vedi esattamente il testo che parte. Le risposte sono conservate su Supabase, a Londra (Regno Unito), e lette solo da chi sviluppa Reelta.</li>
+  <li><b>Consiglia Reelta</b>: il link che mandi ad altre persone contiene un codice casuale (tipo R-4F7K2M), non il tuo nome. Serve solo a sapere quanti Duo sono arrivati grazie a te, per i premi futuri.</li>
+  <li><b>GoatCounter</b>: conta in modo anonimo quante volte si usa Reelta (per esempio aperture, Reel condivisi, cerchi creati). Senza cookie, senza nomi e senza vedere i contenuti.</li>
+  <li><b>Link di prenotazione</b> nei Piani (Google Maps, Booking, GetYourGuide): si aprono sui loro siti. Se un pulsante dice “partner”, prenotando da lì Reelta può ricevere una commissione; per te il prezzo non cambia.</li>
+</ul>
+
+<h2>Perché usiamo questi dati</h2>
+<p>Solo per far funzionare Reelta come lo usi tu: mostrare i Reel al tuo cerchio, collegare i telefoni e tenere al sicuro i collegamenti. Le statistiche anonime servono a capire se l’app funziona e a migliorarla.</p>
+
+<h2>Per quanto tempo</h2>
+<p>I dati restano sul telefono finché non li cancelli. Ogni cerchio tiene gli ultimi Reel e messaggi (fino a qualche centinaio): i più vecchi si cancellano da soli. I link d’invito scadono dopo 10 minuti.</p>
+
+<h2>Come cancellare tutto</h2>
+<ul>
+  <li><b>Un cerchio</b>: in Reelta vai su Cerchio → “Esci da questo cerchio e cancellalo dal telefono”.</li>
+  <li><b>Tutto Reelta</b>: cancella l’app dalla schermata Home. Su iPhone questo elimina anche tutti i dati salvati.</li>
+  <li><b>Quello che hai mandato agli altri</b> resta sui loro telefoni finché non lo cancellano. Puoi eliminare un tuo Reel con 🗑: sparisce anche per il resto del cerchio.</li>
+  <li><b>Una persona del tuo cerchio</b>: chi ha creato il cerchio può toglierla in ogni momento.</li>
+</ul>
+
+<h2>I tuoi diritti</h2>
+<p>Secondo le leggi sulla protezione dei dati (UK GDPR e GDPR europeo) hai diritto di sapere quali dati ti riguardano, correggerli, cancellarli e opporti al loro uso. Visto che i dati stanno sui telefoni del cerchio, la maggior parte di questi diritti li eserciti direttamente dall’app. Per il resto puoi contattarci come indicato sopra. Se pensi che i tuoi dati siano trattati male, puoi rivolgerti all’autorità per la privacy: nel Regno Unito è l’ICO (ico.org.uk), in Italia il Garante per la protezione dei dati personali.</p>
+
+<h2>Età minima</h2>
+<p>Reelta non è pensato per chi ha meno di 13 anni.</p>
+
+<h2>Sicurezza</h2>
+<p>Usiamo collegamenti cifrati, riconoscimento reciproco dei telefoni, inviti che scadono e copie di sicurezza cifrate. Se attivi il PIN, i dati salvati sul telefono vengono cifrati e si aprono solo con il PIN. Nessun sistema è sicuro al 100%: se noti qualcosa di strano, avvisa chi ti ha invitato.</p>
+
+<h2>Cambiamenti</h2>
+<p>Reelta è in beta e sta crescendo. Se in futuro aggiungeremo un server (per esempio per le notifiche), aggiorneremo questa pagina prima di farlo, spiegando cosa cambia.</p>
+
+<footer><a href="./">← Torna a Reelta</a><p>© 2026 Reelta. Tutti i diritti riservati.</p></footer>
+</main>
+</body>
+</html>
